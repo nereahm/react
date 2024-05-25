@@ -240,7 +240,7 @@ body{
     justify-content: center;
     gap: 20px;
     background-color: #f2f2f2;
-    padding: 5rem 10rem;
+    padding: 5rem 1rem;
 }
 
 .card1, .card2, .card3, .card4, .card5, .card6 {
@@ -368,18 +368,28 @@ body{
 }
 
 
-@media (max-width: 320px) {
+@media (min-width: 319px) and (max-width: 767px) {
     .hero{
         display: flex;
         flex-direction: column;
         height: auto;
+        gap: 1.5rem;
     }
     .hero__img{
         height: auto;
+        width: auto;
     }
     .hero__texto{
         padding: 0;
-        height: 125vh;
+        height: auto;
+        display: flex;
+        align-items: center;
+    }
+    .hero__textoTitulo{
+        font-size: 2rem;
+    }
+    .hero__textoP{
+        font-size: 1rem;
     }
     .archive{
         display: flex;
@@ -393,7 +403,10 @@ body{
     }
     .archive__texto {
          height: auto;
-        width: auto}
+        width: auto;
+        display: flex;
+        align-items: center;
+    }
     .archive__textoP{
         margin: 1rem 0 1rem 0;
         }
@@ -413,6 +426,8 @@ body{
          width: auto;
     }
     .expand__texto{
+        display: flex;
+        align-items: center;
         height: auto;
     }
     .expand__textoP{
@@ -426,9 +441,12 @@ body{
     }
     .keep__texto{
         padding: 0.5rem;
+        display: flex;
+        align-items: center;
     }
     .keep__textoP{
         margin: 1rem 0 1rem 0;
+        text-align: center;
     }
     .keep__img {
         height: auto;
@@ -440,6 +458,8 @@ body{
     }
     .reply__texto{
         padding: 0;
+        display: flex;
+        align-items: center;
     }
     .reply__img {
         height: auto;
@@ -450,13 +470,16 @@ body{
    }
    .reply__textoP{
        margin: 1rem 0 1rem 0;
-
+        text-align: center;
    }
     .cards{
         padding: 1rem 0;
     }
     .bragTitulo{
-        margin: 0;
+        margin: 1rem 0;
+        display: flex;
+        justify-content: center;
+    
     }
     .bragGaleria{
         display: flex;
@@ -467,10 +490,19 @@ body{
         height: 25rem;
     }
     .bragCard{
-        padding: 0.2rem;
+        padding: 0.5rem;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        text-align: center;
     }
     .card1, .card2, .card3, .card4, .card5, .card6 {
         padding: 0 0.5rem;
+        padding: 0 0.5rem;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        text-align: center;
     }
     .bragGaleria {
         align-items: center;
