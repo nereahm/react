@@ -8,21 +8,17 @@ body{
     height: 100vh;
     width: 100%;
     background-color: #007AFF;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    justify-content: center; 
-    align-items: center;
+    display: flex;
+    justify-content: space-evenly;
 
 }
 
 .hero__texto{
     height: 100vh;
-    width: 100%;
     display: flex;
     flex-direction: column;
     align-items:start;
     justify-content: center;
-    padding: 0 13rem;
 }
 
 .hero__textoTitulo{
@@ -40,7 +36,6 @@ body{
 }
 .hero__img{
     height: 100vh;
-    width: 100%;
     display: flex;
     align-items:flex-end;
     justify-content: center;
@@ -50,16 +45,12 @@ body{
     height: 100vh;
     width: 100%;
     background-color: #FF2D55;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    justify-items: center; 
-    align-items: center;
-    gap: 10rem;
+    display: flex;
+    justify-content: space-evenly;
 }
 
 .archive__texto {
     height: 100vh;
-    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: start;
@@ -87,21 +78,17 @@ body{
 
 .archive__img {
     height: 100vh;
-    width: 100%;
     display: flex;
     align-items: flex-start;
     justify-content: flex-end;
-    padding: 0 1rem
 }
 
 .keep {
     height: 100vh;
     width: 100%;
     background-color: black;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    justify-content: center; 
-    align-items: center;
+    display: flex;
+    justify-content: space-evenly;
 }
 
 .keep__texto {
@@ -109,7 +96,6 @@ body{
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
-    padding: 0 0 0 13rem;
 }
 
 .keep__textoImg {
@@ -133,7 +119,6 @@ body{
 
 .keep__img {
     height: 100vh;
-    width: 100%;
     display: flex;
     align-items:flex-start;
     justify-content: center;
@@ -143,16 +128,12 @@ body{
     height: 100vh;
     width: 100%;
     background-color: #FFB800;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    justify-items: center; 
-    align-items: center;
-    gap: 10rem;
+    display: flex;
+    justify-content: space-evenly;
 }
 
 .expand__texto {
     height: 100vh;
-    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: start;
@@ -180,31 +161,25 @@ body{
 
 .expand__img {
     height: 100vh;
-    width: 100%;
     display: flex;
     align-items: flex-end;
     justify-content: flex-end;
-    padding: 0 1rem;
 }
 
 .reply {
     height: 100vh;
     width: 100%;
     background-color: #7000FF;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    justify-content: center; 
-    align-items: center;
+    display: flex;
+    justify-content: space-evenly;
 }
 
 .reply__texto {
     height: 100vh;
-    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: start;
     justify-content: center;
-    padding: 0 13rem;
 }
 
 .reply__textoImg {
@@ -228,7 +203,6 @@ body{
 
 .reply__img {
     height: 100vh;
-    width: 100%;
     display: flex;
     align-items: flex-end;
     justify-content: center;
@@ -299,16 +273,15 @@ body{
 
 .bragTitulo {
     font-size: 2rem;
-    margin: 5rem 0 3rem 10rem;
+    padding: 2rem 0rem 2rem 6rem;
 }
 
 .bragGaleria {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr); 
-    grid-auto-rows: auto; 
-    justify-content: center; 
-    gap: 2rem; 
-    padding: 0 10rem; 
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    background-color: #f2f2f2;
 }
 
 .bragCard {
@@ -367,6 +340,9 @@ body{
     margin: 0 1rem 0 0;
 }
 
+.hero__imgImagen,.archive__imgImagen,.keep__imgImagen,.expand__imgImagen,.reply__imgImagen{
+    height: inherit;
+}
 
 @media (min-width: 319px) and (max-width: 767px) {
     .hero{
@@ -396,6 +372,7 @@ body{
         flex-direction: column;
         height: auto;
         gap: 1.5rem;
+        align-items: center;
     }
     .archive__img{
         width: auto;
@@ -420,6 +397,7 @@ body{
         flex-direction: column;
         height: auto;
         gap: 1.5rem;
+        align-items: center;
     }
     .expand__img {
          height: auto;
@@ -479,7 +457,7 @@ body{
         margin: 1rem 0;
         display: flex;
         justify-content: center;
-    
+        padding: 0;
     }
     .bragGaleria{
         display: flex;
